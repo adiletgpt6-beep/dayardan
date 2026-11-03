@@ -14,7 +14,8 @@
     "render": "tsx scripts/build-manifest.ts && remotion render src/index.ts",
     "render:all": "bash scripts/render-all.sh",
     "verify": "tsx scripts/verify.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "master": "bash scripts/master-audio.sh"
   },
   "repository": {
     "type": "git",
