@@ -1,0 +1,49 @@
+{
+  "name": "dayardan-video-production",
+  "version": "1.0.0",
+  "description": "15 Kyrgyz-language vertical videos for dayardan.com, built with Remotion",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "capture": "PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers tsx scripts/capture-site.ts",
+    "tts": "tsx scripts/tts.ts",
+    "build:manifest": "tsx scripts/build-manifest.ts",
+    "render": "tsx scripts/build-manifest.ts && remotion render src/index.ts",
+    "render:all": "bash scripts/render-all.sh",
+    "verify": "tsx scripts/verify.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiletgpt6-beep/dayardan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adiletgpt6-beep/dayardan/issues"
+  },
+  "homepage": "https://github.com/adiletgpt6-beep/dayardan#readme",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "@remotion/cli": "^4.0.540",
+    "@remotion/fonts": "^4.0.540",
+    "@remotion/player": "^4.0.540",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "playwright": "^1.63.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.540",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  },
+  "private": true
+}
