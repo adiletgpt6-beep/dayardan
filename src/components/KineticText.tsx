@@ -17,7 +17,7 @@ export const KineticText: React.FC<{ text: string; size?: number; color?: string
           const y = interpolate(s, [0, 1], [60, 0]);
           const isHl = highlight && w.replace(/[^\p{L}\p{N}]/gu, "").toLowerCase() === highlight.toLowerCase();
           return (
-            <span key={i} style={{ display: "inline-block", transform: `translateY(${y}px) scale(${0.8 + 0.2 * s})`, opacity: s, color: isHl ? theme.colors.accent : color, textShadow: "0 6px 30px rgba(0,0,0,0.25)" }}>{w}</span>
+            <span key={i} style={{ display: "inline-block", transform: `translateY(${y}px) scale(${0.8 + 0.2 * s})`, opacity: s, color: isHl ? theme.colors.accent : color }}>{w}</span>
           );
         })}
       </div>

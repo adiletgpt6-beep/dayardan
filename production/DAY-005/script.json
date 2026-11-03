@@ -57,8 +57,8 @@
       "tone": "blue",
       "zoom": {
         "x": 0.5,
-        "y": 0.32,
-        "scale": 1.25,
+        "y": 0.0,
+        "scale": 1.2,
         "at": 0.8
       },
       "highlight": {

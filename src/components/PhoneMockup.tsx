@@ -14,7 +14,7 @@ export const PhoneMockup: React.FC<{ children: React.ReactNode; x?: number; y?: 
   return (
     <div style={{ position: "absolute", left: x, top: y, width: PHONE.w, height: PHONE.h, perspective: 2200, transform: `scale(${scale})`, transformOrigin: "top center" }}>
       <div style={{ width: "100%", height: "100%", transform: `translateY(${ty}px) rotateY(${rotY}deg)`, opacity: s, transformStyle: "preserve-3d" }}>
-        <div style={{ position: "absolute", inset: 0, borderRadius: PHONE.radius, background: "linear-gradient(145deg,#2a2f3a,#0d1017)", boxShadow: "0 40px 90px rgba(0,0,0,0.55), inset 0 0 0 3px #3a4150" }} />
+        <div style={{ position: "absolute", inset: 0, borderRadius: PHONE.radius, background: "linear-gradient(145deg,#2a2f3a,#0d1017)", boxShadow: "0 30px 50px rgba(0,0,0,0.5), inset 0 0 0 3px #3a4150" }} />
         <div style={{ position: "absolute", left: PHONE.bezel, top: PHONE.bezel, width: SCREEN.w, height: SCREEN.h, borderRadius: PHONE.radius - PHONE.bezel, overflow: "hidden", background: "#fff" }}>
           {children}
         </div>
