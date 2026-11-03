@@ -59,3 +59,5 @@ git add -A && git commit -m "Re-render with real site captures" && git push
 - Рендер (локальный Remotion/FFmpeg), GitHub, шрифты (@fontsource) — 0 сом. Итого ≪ 1000 сом.
 
 ## Последний коммит
+
+`807cf9b377106f44a010b43f9c8ffa5af4a981a6` — «Deliver 15 verified, loudness-mastered MP4s; final STATUS, HANDOFF and verification report» (push подтверждён GitHub).
