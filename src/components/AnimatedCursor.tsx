@@ -1,13 +1,13 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
-import type { Pt } from "../types";
 import { theme } from "../theme";
 
 /**
  * Анимированный курсор/палец для мобильного интерфейса: плавно перемещается между точками,
  * при «тапе» — кольцо-ripple. Координаты — доли ширины/высоты экрана телефона.
  */
-export const AnimatedCursor: React.FC<{ points: Pt[]; width: number; height: number }> = ({ points, width, height }) => {
+type P = { x: number; y: number; at?: number };
+export const AnimatedCursor: React.FC<{ points: P[]; width: number; height: number }> = ({ points, width, height }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   if (!points.length) return null;

@@ -3,7 +3,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { execFileSync } from "child_process";
 const ROOT = path.resolve(__dirname, "..");
-const out = path.join(ROOT, "output");
+const out = path.join(ROOT, process.env.OUT_DIR || "output");
 const only = process.argv.slice(2);
 const files = fs.readdirSync(out).filter((f) => /^DAY-\d{3}\.mp4$/.test(f) && (!only.length || only.includes(f.replace(".mp4", "")))).sort();
 const rows: any[] = [];

@@ -1,9 +1,11 @@
 import React from "react";
+import { Img, staticFile } from "remotion";
 import { theme } from "../theme";
 
-/** Текстовый знак Dayardan (логотип сайта недоступен — используется только название). */
-export const Wordmark: React.FC<{ size?: number; color?: string; dot?: string }> = ({ size = 96, color = "#fff", dot = theme.colors.accent }) => (
-  <div style={{ fontFamily: theme.fonts.body, fontWeight: 900, fontSize: size, color, letterSpacing: -size * 0.04, lineHeight: 1, display: "flex", alignItems: "baseline" }}>
-    Dayardan<span style={{ color: dot }}>.</span>
+/** Знак Dayardan: реальный логотип сайта (public/brand/logo.png) + надпись DAYARDAN в стиле сайта. */
+export const Wordmark: React.FC<{ size?: number; color?: string; dot?: string }> = ({ size = 96, color = "#fff" }) => (
+  <div style={{ display: "flex", alignItems: "center", gap: size * 0.22, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: size, color, letterSpacing: size * 0.01, lineHeight: 1 }}>
+    <Img src={staticFile(theme.brand.logo)} style={{ width: size * 1.15, height: size * 1.15, objectFit: "contain" }} />
+    <span>{theme.brand.name}</span>
   </div>
 );

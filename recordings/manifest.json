@@ -1,0 +1,584 @@
+{
+  "home": {
+    "type": "image",
+    "file": "screenshots/home.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:46.485Z",
+    "note": "Башкы бет (верх): заголовок, кнопки «Сынамык тестти баштоо» и «Кантип иштейт?»",
+    "boxes": {
+      "cta": {
+        "x": 0.041,
+        "y": 0.5683,
+        "w": 0.9179,
+        "h": 0.064
+      },
+      "menu": {
+        "x": 0.8333,
+        "y": 0.0261,
+        "w": 0.1026,
+        "h": 0.0474
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.0853
+      },
+      "how": {
+        "x": 0.041,
+        "y": 0.6465,
+        "w": 0.9179,
+        "h": 0.064
+      }
+    }
+  },
+  "home-result-demo": {
+    "type": "image",
+    "file": "screenshots/home-result-demo.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:47.956Z",
+    "note": "Башкы бет: пример экрана результата (72 %, 144/200, Туура/Ката/Жоопсуз, Көңүл буруучу темалар)",
+    "boxes": {
+      "example": {
+        "x": 0.041,
+        "y": 0.0126,
+        "w": 0.9179,
+        "h": 0.5853
+      },
+      "score": {
+        "x": 0.0846,
+        "y": 0.156,
+        "w": 0.8308,
+        "h": 0.0806
+      },
+      "topics": {
+        "x": 0.0846,
+        "y": 0.4,
+        "w": 0.8308,
+        "h": 0.1777
+      },
+      "stats": {
+        "x": 0.0846,
+        "y": 0.2958,
+        "w": 0.8308,
+        "h": 0.0806
+      }
+    }
+  },
+  "home-features": {
+    "type": "image",
+    "file": "screenshots/home-features.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:49.230Z",
+    "note": "Башкы бет: «Даярдануу үчүн керектүүнүн баары бир жерде» + демо вопроса с таймером",
+    "boxes": {}
+  },
+  "home-demo-question": {
+    "type": "image",
+    "file": "screenshots/home-demo-question.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:50.519Z",
+    "note": "Башкы бет: демо вопроса ЖРТ-формата (Математика · 4-суроо, таймер 24:35, варианты А–Г)",
+    "boxes": {
+      "optC": {
+        "x": 0,
+        "y": -0.2812,
+        "w": 1,
+        "h": 2.2661
+      },
+      "timer": {
+        "x": 0.748,
+        "y": 0.3717,
+        "w": 0.0879,
+        "h": 0.019
+      }
+    }
+  },
+  "home-analysis": {
+    "type": "image",
+    "file": "screenshots/home-analysis.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:51.765Z",
+    "note": "Башкы бет: «Кайсы темаларга көңүл буруу керек?» — слабые темы (Пайыздар 40 %, Аналогиялар 55 %)",
+    "boxes": {}
+  },
+  "home-progress": {
+    "type": "image",
+    "file": "screenshots/home-progress.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:53.026Z",
+    "note": "Башкы бет: «Өнүгүүңүздү байкап туруңуз» — график прогресса по тестам (+12 балл)",
+    "boxes": {}
+  },
+  "home-steps": {
+    "type": "image",
+    "file": "screenshots/home-steps.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:54.273Z",
+    "note": "Башкы бет: «Жөнөкөй 3 кадам» — Тестти тандаңыз / Тесттен өтүңүз / Жыйынтыкты көрүңүз",
+    "boxes": {}
+  },
+  "home-final-cta": {
+    "type": "image",
+    "file": "screenshots/home-final-cta.png",
+    "url": "https://www.dayardan.com/ky",
+    "capturedAt": "2026-11-04T01:51:56.285Z",
+    "note": "Башкы бет: финальный блок «Максатыңызга бир кадам жакындаңыз!»",
+    "boxes": {
+      "cta": {
+        "x": 0.041,
+        "y": -4.6035,
+        "w": 0.9179,
+        "h": 0.064
+      }
+    }
+  },
+  "menu": {
+    "type": "image",
+    "file": "screenshots/menu.png",
+    "url": "https://www.dayardan.com/ky/menu?from=%2F",
+    "capturedAt": "2026-11-04T01:51:59.552Z",
+    "note": "Мобильное меню: Аккаунтка кирүү, Башкы бет, Сынамык ЖРТ, Кантип иштейт?, Биз жөнүндө, Байланыш",
+    "boxes": {
+      "login": {
+        "x": 0.0308,
+        "y": 0.1007,
+        "w": 0.9385,
+        "h": 0.1161
+      },
+      "tests": {
+        "x": 0.0333,
+        "y": 0.3406,
+        "w": 0.9333,
+        "h": 0.0687
+      },
+      "how": {
+        "x": 0.0333,
+        "y": 0.4105,
+        "w": 0.9333,
+        "h": 0.0687
+      },
+      "home": {
+        "x": 0.0333,
+        "y": 0.2707,
+        "w": 0.9333,
+        "h": 0.0687
+      }
+    }
+  },
+  "tests-hub": {
+    "type": "image",
+    "file": "screenshots/tests-hub.png",
+    "url": "https://www.dayardan.com/ky/tests",
+    "capturedAt": "2026-11-04T01:52:02.647Z",
+    "note": "Страница «Максатыңа карай даярдан!»: карточка «Толук ЖРТ тести» + кнопка «Тестти тандоо»",
+    "boxes": {
+      "full": {
+        "x": 0.041,
+        "y": 0.3779,
+        "w": 0.9179,
+        "h": 0.516
+      },
+      "card": {
+        "x": 0.0949,
+        "y": 0.6445,
+        "w": 0.8103,
+        "h": 0.0326
+      }
+    }
+  },
+  "tests-hub-thematic": {
+    "type": "image",
+    "file": "screenshots/tests-hub-thematic.png",
+    "url": "https://www.dayardan.com/ky/tests",
+    "capturedAt": "2026-11-04T01:52:03.982Z",
+    "note": "Страница выбора: карточка «Тематикалык машыгуу» + кнопка «Теманы тандоо»",
+    "boxes": {
+      "thematic": {
+        "x": 0.041,
+        "y": 0.0894,
+        "w": 0.9179,
+        "h": 0.516
+      }
+    }
+  },
+  "tests-ort": {
+    "type": "image",
+    "file": "screenshots/tests-ort.png",
+    "url": "https://www.dayardan.com/ky/tests/ort",
+    "capturedAt": "2026-11-04T01:52:07.002Z",
+    "note": "Список полных ЖРТ-тестов (в среде рендера API заблокирован — показана ошибка загрузки; НЕ используется в роликах)",
+    "boxes": {}
+  },
+  "tests-subjects": {
+    "type": "image",
+    "file": "screenshots/tests-subjects.png",
+    "url": "https://www.dayardan.com/ky/tests/subjects",
+    "capturedAt": "2026-11-04T01:52:10.521Z",
+    "note": "Выбор предмета для тематических тестов (API заблокирован — пустой список; НЕ используется)",
+    "boxes": {}
+  },
+  "how-it-works": {
+    "type": "image",
+    "file": "screenshots/how-it-works.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:52:13.876Z",
+    "note": "«Dayardan кантип иштейт?» — верх страницы-руководства",
+    "boxes": {
+      "cta": {
+        "x": 0.041,
+        "y": 0.4348,
+        "w": 0.9179,
+        "h": 0.064
+      }
+    }
+  },
+  "how-steps": {
+    "type": "image",
+    "file": "screenshots/how-steps.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:52:15.187Z",
+    "note": "Руководство: «Даярдык жолуңуз — 3 кадам»",
+    "boxes": {}
+  },
+  "how-choose": {
+    "type": "image",
+    "file": "screenshots/how-choose.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:52:16.422Z",
+    "note": "Руководство: «01 / Тестти тандоо» — полный тест vs тематический",
+    "boxes": {}
+  },
+  "how-take": {
+    "type": "image",
+    "file": "screenshots/how-take.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:52:17.688Z",
+    "note": "Руководство: «02 / Тесттен өтүү» — как проходит тест",
+    "boxes": {}
+  },
+  "how-demo-question": {
+    "type": "image",
+    "file": "screenshots/how-demo-question.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:53:19.007Z",
+    "note": "Руководство: ДЕМО интерфейса теста — вопрос 1/2, таймер, варианты А–Г, кнопки Артка/Кийинки",
+    "boxes": {
+      "optA": {
+        "x": 0.1513,
+        "y": 0.372,
+        "w": 0.6974,
+        "h": 0.064
+      },
+      "optB": {
+        "x": 0.1513,
+        "y": 0.4454,
+        "w": 0.6974,
+        "h": 0.064
+      },
+      "optC": {
+        "x": 0.1513,
+        "y": 0.5189,
+        "w": 0.6974,
+        "h": 0.064
+      },
+      "optD": {
+        "x": 0.1513,
+        "y": 0.5923,
+        "w": 0.6974,
+        "h": 0.064
+      },
+      "timer": {
+        "x": 0.7403,
+        "y": 0.18,
+        "w": 0.0879,
+        "h": 0.019
+      },
+      "next": {
+        "x": 0.5821,
+        "y": 0.7061,
+        "w": 0.2769,
+        "h": 0.0521
+      },
+      "back": {
+        "x": 0.141,
+        "y": 0.7061,
+        "w": 0.2411,
+        "h": 0.0521
+      },
+      "card": {
+        "x": 0.041,
+        "y": 0.0556,
+        "w": 0.9179,
+        "h": 0.8152
+      }
+    }
+  },
+  "how-demo-answered": {
+    "type": "image",
+    "file": "screenshots/how-demo-answered.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:53:19.805Z",
+    "note": "ДЕМО: выбран вариант В) 30",
+    "boxes": {
+      "next": {
+        "x": 0.5821,
+        "y": 0.7061,
+        "w": 0.2769,
+        "h": 0.0521
+      },
+      "optC": {
+        "x": 0.1513,
+        "y": 0.5189,
+        "w": 0.6974,
+        "h": 0.064
+      }
+    }
+  },
+  "how-demo-next": {
+    "type": "image",
+    "file": "screenshots/how-demo-next.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:53:51.122Z",
+    "note": "ДЕМО: второй вопрос после нажатия «Кийинки»",
+    "boxes": {
+      "back": {
+        "x": 0.141,
+        "y": 0.7061,
+        "w": 0.2411,
+        "h": 0.0521
+      },
+      "restart": {
+        "x": 0.6201,
+        "y": 0.7061,
+        "w": 0.2389,
+        "h": 0.0521
+      }
+    }
+  },
+  "how-after": {
+    "type": "image",
+    "file": "screenshots/how-after.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:53:52.385Z",
+    "note": "Руководство: «03 / Жыйынтыкты талдоо» — что после теста",
+    "boxes": {}
+  },
+  "how-result-demo": {
+    "type": "image",
+    "file": "screenshots/how-result-demo.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:53:53.642Z",
+    "note": "Руководство: МИСАЛ результата — 72 %, 18/25 туура, Туура/Ката/Жоопсуз, Көңүл буруучу темалар",
+    "boxes": {}
+  },
+  "how-result-topics": {
+    "type": "image",
+    "file": "screenshots/how-result-topics.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:53:54.905Z",
+    "note": "Руководство: блок «Көңүл буруучу темалар» (Пайыздар 40 %, Аналогиялар 55 %)",
+    "boxes": {}
+  },
+  "how-faq": {
+    "type": "image",
+    "file": "screenshots/how-faq.png",
+    "url": "https://www.dayardan.com/ky/how-it-works",
+    "capturedAt": "2026-11-04T01:53:56.167Z",
+    "note": "Руководство: FAQ",
+    "boxes": {}
+  },
+  "login": {
+    "type": "image",
+    "file": "screenshots/login.png",
+    "url": "https://www.dayardan.com/ky/login",
+    "capturedAt": "2026-11-04T01:54:02.052Z",
+    "note": "Страница «Кирүү»: Google, e-mail, сырсөз, кнопка Кирүү, ссылка Катталуу",
+    "boxes": {
+      "email": {
+        "x": 0.1359,
+        "y": 0.4662,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "password": {
+        "x": 0.1359,
+        "y": 0.5729,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "submit": {
+        "x": 0.1359,
+        "y": 0.6842,
+        "w": 0.7282,
+        "h": 0.0569
+      },
+      "google": {
+        "x": 0.0615,
+        "y": 0.3051,
+        "w": 0.8769,
+        "h": 0.0545
+      },
+      "register": {
+        "x": 0.596,
+        "y": 0.7755,
+        "w": 0.1686,
+        "h": 0.0201
+      }
+    }
+  },
+  "register": {
+    "type": "image",
+    "file": "screenshots/register.png",
+    "url": "https://www.dayardan.com/ky/register",
+    "capturedAt": "2026-11-04T01:54:06.759Z",
+    "note": "Страница «Катталуу»: Google, Атыңыз, e-mail, сырсөз ×2, кнопка Катталуу",
+    "boxes": {
+      "name": {
+        "x": 0.1359,
+        "y": 0.3886,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "email": {
+        "x": 0.1359,
+        "y": 0.4953,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "password": {
+        "x": 0.1359,
+        "y": 0.6019,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "confirm": {
+        "x": 0.1359,
+        "y": 0.7085,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "submit": {
+        "x": 0.1359,
+        "y": 0.782,
+        "w": 0.7282,
+        "h": 0.0616
+      },
+      "google": {
+        "x": 0.0615,
+        "y": 0.2275,
+        "w": 0.8769,
+        "h": 0.0545
+      }
+    }
+  },
+  "register-filled": {
+    "type": "image",
+    "file": "screenshots/register-filled.png",
+    "url": "https://www.dayardan.com/ky/register",
+    "capturedAt": "2026-11-04T01:54:09.467Z",
+    "note": "Страница «Катталуу» с примером заполнения (форма НЕ отправлялась)",
+    "boxes": {
+      "name": {
+        "x": 0.1359,
+        "y": 0.3886,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "email": {
+        "x": 0.1359,
+        "y": 0.4953,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "password": {
+        "x": 0.1359,
+        "y": 0.6019,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "confirm": {
+        "x": 0.1359,
+        "y": 0.7085,
+        "w": 0.7282,
+        "h": 0.0545
+      },
+      "submit": {
+        "x": 0.1359,
+        "y": 0.782,
+        "w": 0.7282,
+        "h": 0.0616
+      },
+      "google": {
+        "x": 0.0615,
+        "y": 0.2275,
+        "w": 0.8769,
+        "h": 0.0545
+      }
+    }
+  },
+  "about": {
+    "type": "image",
+    "file": "screenshots/about.png",
+    "url": "https://www.dayardan.com/ky/about",
+    "capturedAt": "2026-11-04T01:54:12.797Z",
+    "note": "Биз жөнүндө",
+    "boxes": {}
+  },
+  "contact": {
+    "type": "image",
+    "file": "screenshots/contact.png",
+    "url": "https://www.dayardan.com/ky/contact",
+    "capturedAt": "2026-11-04T01:54:15.888Z",
+    "note": "Байланыш: WhatsApp, Telegram, e-mail, Instagram",
+    "boxes": {}
+  },
+  "rec-home-scroll": {
+    "type": "video",
+    "file": "recordings/rec-home-scroll.mp4",
+    "url": "https://www.dayardan.com",
+    "capturedAt": "2026-11-04T01:54:29.628Z",
+    "note": "Запись: плавный скролл главной страницы (верх → пример результата → возможности)",
+    "durationSec": 8.93
+  },
+  "rec-home-menu": {
+    "type": "video",
+    "file": "recordings/rec-home-menu.mp4",
+    "url": "https://www.dayardan.com",
+    "capturedAt": "2026-11-04T01:54:39.190Z",
+    "note": "Запись: главная → открытие мобильного меню",
+    "durationSec": 6.03
+  },
+  "rec-tests-hub": {
+    "type": "video",
+    "file": "recordings/rec-tests-hub.mp4",
+    "url": "https://www.dayardan.com",
+    "capturedAt": "2026-11-04T01:54:49.322Z",
+    "note": "Запись: страница выбора типа теста (полный / тематический), скролл",
+    "durationSec": 6.73
+  },
+  "rec-demo-answer": {
+    "type": "video",
+    "file": "recordings/rec-demo-answer.mp4",
+    "url": "https://www.dayardan.com",
+    "capturedAt": "2026-11-04T01:55:01.222Z",
+    "note": "Запись: ДЕМО интерфейса теста на странице «Кантип иштейт?» — выбор варианта В и нажатие «Кийинки»",
+    "durationSec": 7.8
+  },
+  "rec-how-result": {
+    "type": "video",
+    "file": "recordings/rec-how-result.mp4",
+    "url": "https://www.dayardan.com",
+    "capturedAt": "2026-11-04T01:55:13.652Z",
+    "note": "Запись: скролл к примеру результата и слабым темам на странице «Кантип иштейт?»",
+    "durationSec": 7.93
+  },
+  "rec-register-typing": {
+    "type": "video",
+    "file": "recordings/rec-register-typing.mp4",
+    "url": "https://www.dayardan.com",
+    "capturedAt": "2026-11-04T01:55:27.528Z",
+    "note": "Запись: заполнение формы «Катталуу» примером (форма НЕ отправляется)",
+    "durationSec": 11.37
+  }
+}

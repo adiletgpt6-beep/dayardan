@@ -6,7 +6,7 @@ import { Background } from "../components/Background";
 import { KineticText } from "../components/KineticText";
 import { Icon } from "../components/Icon";
 import { PhoneMockup, SCREEN } from "../components/PhoneMockup";
-import { ScreenRecording } from "../components/ScreenRecording";
+import { ScreenRecording, getBox } from "../components/ScreenRecording";
 import { AnimatedCursor } from "../components/AnimatedCursor";
 import { ButtonHighlight } from "../components/ButtonHighlight";
 import { ZoomEffect } from "../components/ZoomEffect";
@@ -73,11 +73,17 @@ const Phone: React.FC<Extract<Scene, { type: "phone" }>> = (p) => {
   const { fps } = useVideoConfig();
   const dark = p.tone === "accent";
   const cap = spring({ frame: frame - 12, fps, config: { damping: 16, stiffness: 120 } });
+  // координаты по имени элемента реального интерфейса (manifest.boxes) или явные доли экрана
+  const cursorPts = (p.cursor ?? []).map((c) => { const b = getBox(p.screen, c.box); return { x: b ? b.x + b.w / 2 : c.x ?? 0.5, y: b ? b.y + b.h / 2 : c.y ?? 0.5, at: c.at }; });
+  const hb = p.highlight ? getBox(p.screen, p.highlight.box) : undefined;
+  const highlight = p.highlight ? { x: hb?.x ?? p.highlight.x ?? 0.1, y: hb?.y ?? p.highlight.y ?? 0.5, w: hb?.w ?? p.highlight.w ?? 0.8, h: hb?.h ?? p.highlight.h ?? 0.08, at: p.highlight.at } : undefined;
+  const zb = p.zoom ? getBox(p.screen, p.zoom.box) : undefined;
+  const zoom = p.zoom ? { x: zb ? zb.x + zb.w / 2 : p.zoom.x ?? 0.5, y: zb ? zb.y + zb.h / 2 : p.zoom.y ?? 0.4, scale: p.zoom.scale, at: p.zoom.at } : undefined;
   const inner = (
     <>
-      <ScreenRecording screen={p.screen} title={p.screenTitle} lines={p.screenLines} button={p.button} width={SCREEN.w} height={SCREEN.h} />
-      {p.highlight && <ButtonHighlight {...p.highlight} width={SCREEN.w} height={SCREEN.h} />}
-      {p.cursor && <AnimatedCursor points={p.cursor} width={SCREEN.w} height={SCREEN.h} />}
+      <ScreenRecording screen={p.screen} title={p.screenTitle} lines={p.screenLines} button={p.button} width={SCREEN.w} height={SCREEN.h} startFrom={p.startFrom} />
+      {highlight && <ButtonHighlight {...highlight} width={SCREEN.w} height={SCREEN.h} />}
+      {cursorPts.length > 0 && <AnimatedCursor points={cursorPts} width={SCREEN.w} height={SCREEN.h} />}
     </>
   );
   return (
@@ -85,11 +91,11 @@ const Phone: React.FC<Extract<Scene, { type: "phone" }>> = (p) => {
       <Background tone={p.tone ?? "dark"} />
       <TopBrand dark={dark} />
       <PhoneMockup y={230} scale={0.9}>
-        {p.zoom ? <ZoomEffect {...p.zoom}>{inner}</ZoomEffect> : inner}
+        {zoom ? <ZoomEffect {...zoom}>{inner}</ZoomEffect> : inner}
       </PhoneMockup>
       {p.caption && (
         <div style={{ position: "absolute", top: 1300, left: 70, right: 70, display: "flex", justifyContent: "center", opacity: cap, transform: `translateY(${(1 - cap) * 40}px)` }}>
-          <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: fitFontSize(p.caption, 900, 58), color: dark ? theme.colors.navy : "#fff", background: dark ? "rgba(255,255,255,0.7)" : theme.colors.primary, padding: "22px 44px", borderRadius: 28, textAlign: "center", lineHeight: 1.2, boxShadow: "0 16px 40px rgba(0,0,0,0.25)" }}>{p.caption}</div>
+          <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: fitFontSize(p.caption, 900, 58), color: dark ? theme.colors.navy : "#fff", background: dark ? "rgba(255,255,255,0.75)" : theme.colors.primary, padding: "22px 44px", borderRadius: 28, textAlign: "center", lineHeight: 1.2, boxShadow: "0 16px 40px rgba(0,0,0,0.25)" }}>{p.caption}</div>
         </div>
       )}
     </AbsoluteFill>

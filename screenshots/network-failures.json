@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://api.dayardan.com/auth/refresh",
+    "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/about?_rsc=1a28h",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/contact?_rsc=1cly7",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://api.dayardan.com/tests/get-all?examType=ORT&isPublished=true&page=1&limit=12",
+    "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/menu?from=%2Fabout&_rsc=1c8gu",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://api.dayardan.com/subject?page=1&limit=12",
+    "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky?_rsc=1c8gu",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/tests?_rsc=xmf59",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/tests/ort?_rsc=onkfu",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/tests/subjects?_rsc=zb5uw",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/forgot-password",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://www.dayardan.com/ky/register",
+    "error": "net::ERR_ABORTED"
+  }
+]
