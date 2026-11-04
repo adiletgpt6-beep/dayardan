@@ -54,3 +54,5 @@ git add -A && git commit -m "..." && git push
 - Рендер, захват, GitHub — 0 сом. Итого ≪ 1000 сом.
 
 ## Последний коммит
+
+`b1da45cdce7763a56efa229c470f2ac66efb3a7d` — «Deliver v2: all 15 videos re-rendered with real dayardan.com screens, verified and mastered; update STATUS, HANDOFF, VERIFICATION» (push подтверждён GitHub).
