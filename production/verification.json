@@ -1,10 +1,10 @@
 {
-  "at": "2026-11-03T22:20:46.696Z",
+  "at": "2026-11-04T04:05:23.077Z",
   "rows": [
     {
       "id": "DAY-001",
       "file": "DAY-001.mp4",
-      "sizeMB": 14,
+      "sizeMB": 13.8,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -18,7 +18,7 @@
     {
       "id": "DAY-002",
       "file": "DAY-002.mp4",
-      "sizeMB": 13.1,
+      "sizeMB": 13.2,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -32,7 +32,7 @@
     {
       "id": "DAY-003",
       "file": "DAY-003.mp4",
-      "sizeMB": 14.2,
+      "sizeMB": 13.3,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -60,7 +60,7 @@
     {
       "id": "DAY-005",
       "file": "DAY-005.mp4",
-      "sizeMB": 13.4,
+      "sizeMB": 12.6,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -74,7 +74,7 @@
     {
       "id": "DAY-006",
       "file": "DAY-006.mp4",
-      "sizeMB": 13.1,
+      "sizeMB": 12.5,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -88,7 +88,7 @@
     {
       "id": "DAY-007",
       "file": "DAY-007.mp4",
-      "sizeMB": 13.3,
+      "sizeMB": 13,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -102,7 +102,7 @@
     {
       "id": "DAY-008",
       "file": "DAY-008.mp4",
-      "sizeMB": 14.1,
+      "sizeMB": 15.5,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -116,21 +116,21 @@
     {
       "id": "DAY-009",
       "file": "DAY-009.mp4",
-      "sizeMB": 14,
+      "sizeMB": 12.6,
       "width": 1080,
       "height": 1920,
       "fps": 30,
-      "duration": 59.9,
+      "duration": 56.5,
       "codec": "h264",
       "audio": "aac 48000Hz",
-      "meanVolume": "-19.0 dB",
+      "meanVolume": "-18.7 dB",
       "blackSegments": 0,
       "ok": true
     },
     {
       "id": "DAY-010",
       "file": "DAY-010.mp4",
-      "sizeMB": 13.9,
+      "sizeMB": 14,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -144,7 +144,7 @@
     {
       "id": "DAY-011",
       "file": "DAY-011.mp4",
-      "sizeMB": 13.3,
+      "sizeMB": 12.3,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -158,7 +158,7 @@
     {
       "id": "DAY-012",
       "file": "DAY-012.mp4",
-      "sizeMB": 13.5,
+      "sizeMB": 12.5,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -172,7 +172,7 @@
     {
       "id": "DAY-013",
       "file": "DAY-013.mp4",
-      "sizeMB": 13.2,
+      "sizeMB": 13.7,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -186,7 +186,7 @@
     {
       "id": "DAY-014",
       "file": "DAY-014.mp4",
-      "sizeMB": 13.9,
+      "sizeMB": 13.1,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -200,7 +200,7 @@
     {
       "id": "DAY-015",
       "file": "DAY-015.mp4",
-      "sizeMB": 13.2,
+      "sizeMB": 14.3,
       "width": 1080,
       "height": 1920,
       "fps": 30,
