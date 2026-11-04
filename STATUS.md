@@ -28,6 +28,10 @@
 | DAY-014 | Жыйынтыкты кантип көрөбүз? | обучение | ✅ | ✅ 53.5 | ✅ | home-result-demo | ✅ 57.7 с, 13.1 МБ | delivered |  |
 | DAY-015 | Dayardan сайтын толук колдонуу | обучение | ✅ | ✅ 48.7 | ✅ | home, home-result-demo, rec-demo-answer, rec-tests-hub, tests-hub | ✅ 55.1 с, 14.3 МБ | delivered |  |
 
+## Галерея: просмотр и скачивание
+
+https://claude.ai/artifact/96U94qFH8qsYf9uKXdhnq7 — все 15 роликов с плеером и кнопкой «Скачать оригинал» (1080×1920).
+
 ## Ссылки на MP4 (ветка `claude/dayardan-video-production-ns6ro9`)
 
 | ID | Просмотр на GitHub | Прямая ссылка (raw) |

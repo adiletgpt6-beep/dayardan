@@ -1,0 +1,265 @@
+<title>Dayardan — 15 роликов</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: brand header band, two sections of 9:16 cards in a responsive grid, download list at the end. */
+:root {
+  --bg: #F9FAFB; --fg: #111827; --muted: #5B6B5F; --card: #FFFFFF; --line: #DCE7DF;
+  --brand: #16A34A; --brand-dark: #166534; --band: #10482C; --band-fg: #ECFDF5; --mint: #DCFCE7;
+  --font: "Inter", "Segoe UI", Roboto, system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0B1F17; --fg: #ECFDF5; --muted: #9DB8A6; --card: #112A20; --line: #1F4634; --brand: #22C55E; --brand-dark: #4ADE80; --band: #06241A; --band-fg: #ECFDF5; --mint: #14392A; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0B1F17; --fg: #ECFDF5; --muted: #9DB8A6; --card: #112A20; --line: #1F4634; --brand: #22C55E; --brand-dark: #4ADE80; --band: #06241A; --band-fg: #ECFDF5; --mint: #14392A; color-scheme: dark }
+* { box-sizing: border-box }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); line-height: 1.5; }
+.band { background: var(--band); color: var(--band-fg); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header .wrap { padding-block: 40px 34px; display: grid; gap: 14px; }
+.logo { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .04em; font-size: 1.05rem; }
+.logo img { width: 44px; height: 44px; object-fit: contain; }
+h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.15; text-wrap: balance; }
+h1 b { color: #4ADE80; font-weight: 800; }
+.lead { margin: 0; max-width: 62ch; color: var(--band-fg); opacity: .9; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .9rem; opacity: .85; font-variant-numeric: tabular-nums; }
+.howto { background: var(--mint); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-top: 8px; font-size: .95rem; }
+.howto strong { color: var(--brand-dark); }
+h2 { font-size: 1.25rem; margin: 26px 0 14px; display: flex; align-items: baseline; gap: 10px; }
+h2 small { color: var(--muted); font-weight: 500; font-size: .9rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.player { aspect-ratio: 9 / 16; max-width: 100%; background: #000; }
+.player video { width: 100%; height: 100%; display: block; object-fit: cover; }
+.body { padding: 12px 14px 14px; display: grid; gap: 8px; }
+.eyebrow { display: flex; justify-content: space-between; align-items: center; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.kind { padding: 2px 8px; border-radius: 999px; background: var(--mint); color: var(--brand-dark); }
+h3 { margin: 0; font-size: 1rem; line-height: 1.3; font-weight: 700; }
+.meta { margin: 0; display: flex; gap: 10px; color: var(--muted); font-size: .85rem; font-variant-numeric: tabular-nums; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-weight: 600; font-size: .88rem; flex: 1 1 auto; }
+.btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+.btn:hover { filter: brightness(1.05); }
+.btn:focus-visible, video:focus-visible, .list a:focus-visible { outline: 3px solid var(--brand-dark); outline-offset: 2px; }
+.list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--card); overflow: hidden; }
+.list li { display: grid; grid-template-columns: 120px 1fr auto; gap: 12px; padding: 10px 14px; border-top: 1px solid var(--line); align-items: center; min-width: 0; }
+.list li:first-child { border-top: 0; }
+.list a { color: var(--brand-dark); font-weight: 700; text-decoration: none; }
+.list span { min-width: 0; overflow-wrap: anywhere; }
+.sz { color: var(--muted); font-variant-numeric: tabular-nums; font-size: .9rem; }
+footer { color: var(--muted); font-size: .85rem; padding-block: 10px 30px; }
+@media (max-width: 480px) { .list li { grid-template-columns: 1fr auto; } .list li span:not(.sz) { grid-column: 1 / -1; font-size: .85rem; color: var(--muted); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+<header class="band"><div class="wrap">
+  <div class="logo"><img src="poster/logo.png" alt=""> DAYARDAN</div>
+  <h1>15 роликов для ЖРТ-платформы Dayardan <b>— смотреть и скачать</b></h1>
+  <p class="lead">Вертикальные ролики 9:16 на кыргызском языке с озвучкой и субтитрами: 7 рекламных и 8 обучающих. Все собраны из настоящих экранов dayardan.com.</p>
+  <div class="facts"><span>1080×1920</span><span>30 fps</span><span>55–60 с</span><span>H.264 + AAC</span><span>всего 200 МБ</span></div>
+  <div class="howto">На странице играет лёгкая копия (720×1280). <strong>«Скачать оригинал»</strong> открывает файл 1080×1920 без пережатия — это и есть лучшее качество, файл сразу сохраняется в «Загрузки». На телефоне: удерживайте кнопку → «Скачать файл» / «Сохранить». Для публикации в Reels, TikTok и Shorts загружайте именно оригинал.</div>
+</div></header>
+<main class="wrap">
+  <h2>Рекламные <small>7 роликов</small></h2>
+  <div class="grid">
+<article class="card" id="DAY-001">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-001.jpg" src="preview/DAY-001.mp4" aria-label="ЖРТга даярданып жатасыңбы?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-001</span><span class="kind ad">Реклама</span></div>
+    <h3>ЖРТга даярданып жатасыңбы?</h3>
+    <p class="meta"><span>57 с</span><span>1080×1920</span><span>13.8 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-001.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-001.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-002">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-002.jpg" src="preview/DAY-002.mp4" aria-label="Телефонуң менен даярдан!"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-002</span><span class="kind ad">Реклама</span></div>
+    <h3>Телефонуң менен даярдан!</h3>
+    <p class="meta"><span>55 с</span><span>1080×1920</span><span>13.2 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-002.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-002.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-003">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-003.jpg" src="preview/DAY-003.mp4" aria-label="Даярданууну бүгүн башта!"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-003</span><span class="kind ad">Реклама</span></div>
+    <h3>Даярданууну бүгүн башта!</h3>
+    <p class="meta"><span>60 с</span><span>1080×1920</span><span>13.3 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-003.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-003.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-004">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-004.jpg" src="preview/DAY-004.mp4" aria-label="Өзүңдү сынап көр!"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-004</span><span class="kind ad">Реклама</span></div>
+    <h3>Өзүңдү сынап көр!</h3>
+    <p class="meta"><span>58 с</span><span>1080×1920</span><span>13.4 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-004.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-004.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-005">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-005.jpg" src="preview/DAY-005.mp4" aria-label="Каталарыңды билип ал!"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-005</span><span class="kind ad">Реклама</span></div>
+    <h3>Каталарыңды билип ал!</h3>
+    <p class="meta"><span>57 с</span><span>1080×1920</span><span>12.6 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-005.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-005.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-006">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-006.jpg" src="preview/DAY-006.mp4" aria-label="ЖРТга даярдануунун оңой жолу"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-006</span><span class="kind ad">Реклама</span></div>
+    <h3>ЖРТга даярдануунун оңой жолу</h3>
+    <p class="meta"><span>55 с</span><span>1080×1920</span><span>12.5 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-006.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-006.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-007">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-007.jpg" src="preview/DAY-007.mp4" aria-label="Dayardan менен максатыңа жакында!"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-007</span><span class="kind ad">Реклама</span></div>
+    <h3>Dayardan менен максатыңа жакында!</h3>
+    <p class="meta"><span>57 с</span><span>1080×1920</span><span>13 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-007.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-007.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+  </div>
+  <h2>Обучающие <small>8 сабактов</small></h2>
+  <div class="grid">
+<article class="card" id="DAY-008">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-008.jpg" src="preview/DAY-008.mp4" aria-label="Dayardan сайтына кантип киребиз?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-008</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Dayardan сайтына кантип киребиз?</h3>
+    <p class="meta"><span>60 с</span><span>1080×1920</span><span>15.5 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-008.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-008.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-009">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-009.jpg" src="preview/DAY-009.mp4" aria-label="Кантип катталабыз?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-009</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Кантип катталабыз?</h3>
+    <p class="meta"><span>56 с</span><span>1080×1920</span><span>12.6 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-009.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-009.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-010">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-010.jpg" src="preview/DAY-010.mp4" aria-label="Тестти кантип табабыз?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-010</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Тестти кантип табабыз?</h3>
+    <p class="meta"><span>60 с</span><span>1080×1920</span><span>14 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-010.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-010.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-011">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-011.jpg" src="preview/DAY-011.mp4" aria-label="Тестти кантип баштайбыз?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-011</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Тестти кантип баштайбыз?</h3>
+    <p class="meta"><span>56 с</span><span>1080×1920</span><span>12.3 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-011.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-011.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-012">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-012.jpg" src="preview/DAY-012.mp4" aria-label="Суроолорго кантип жооп беребиз?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-012</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Суроолорго кантип жооп беребиз?</h3>
+    <p class="meta"><span>57 с</span><span>1080×1920</span><span>12.5 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-012.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-012.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-013">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-013.jpg" src="preview/DAY-013.mp4" aria-label="Тестти кантип аяктайбыз?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-013</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Тестти кантип аяктайбыз?</h3>
+    <p class="meta"><span>55 с</span><span>1080×1920</span><span>13.7 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-013.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-013.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-014">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-014.jpg" src="preview/DAY-014.mp4" aria-label="Жыйынтыкты кантип көрөбүз?"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-014</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Жыйынтыкты кантип көрөбүз?</h3>
+    <p class="meta"><span>58 с</span><span>1080×1920</span><span>13.1 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-014.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-014.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+<article class="card" id="DAY-015">
+  <div class="player"><video controls playsinline preload="none" poster="poster/DAY-015.jpg" src="preview/DAY-015.mp4" aria-label="Dayardan сайтын толук колдонуу"></video></div>
+  <div class="body">
+    <div class="eyebrow"><span class="id">DAY-015</span><span class="kind tutorial">Сабак</span></div>
+    <h3>Dayardan сайтын толук колдонуу</h3>
+    <p class="meta"><span>55 с</span><span>1080×1920</span><span>14.3 МБ</span></p>
+    <div class="actions">
+      <a class="btn primary" href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-015.mp4" target="_blank" rel="noopener">Скачать оригинал</a>
+      <a class="btn" href="https://github.com/adiletgpt6-beep/dayardan/blob/claude/dayardan-video-production-ns6ro9/output/DAY-015.mp4" target="_blank" rel="noopener">На GitHub</a>
+    </div>
+  </div>
+</article>
+  </div>
+  <h2>Все оригиналы списком <small>MP4, 1080×1920</small></h2>
+  <ul class="list">
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-001.mp4" target="_blank" rel="noopener">DAY-001.mp4</a><span>ЖРТга даярданып жатасыңбы?</span><span class="sz">13.8 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-002.mp4" target="_blank" rel="noopener">DAY-002.mp4</a><span>Телефонуң менен даярдан!</span><span class="sz">13.2 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-003.mp4" target="_blank" rel="noopener">DAY-003.mp4</a><span>Даярданууну бүгүн башта!</span><span class="sz">13.3 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-004.mp4" target="_blank" rel="noopener">DAY-004.mp4</a><span>Өзүңдү сынап көр!</span><span class="sz">13.4 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-005.mp4" target="_blank" rel="noopener">DAY-005.mp4</a><span>Каталарыңды билип ал!</span><span class="sz">12.6 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-006.mp4" target="_blank" rel="noopener">DAY-006.mp4</a><span>ЖРТга даярдануунун оңой жолу</span><span class="sz">12.5 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-007.mp4" target="_blank" rel="noopener">DAY-007.mp4</a><span>Dayardan менен максатыңа жакында!</span><span class="sz">13 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-008.mp4" target="_blank" rel="noopener">DAY-008.mp4</a><span>Dayardan сайтына кантип киребиз?</span><span class="sz">15.5 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-009.mp4" target="_blank" rel="noopener">DAY-009.mp4</a><span>Кантип катталабыз?</span><span class="sz">12.6 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-010.mp4" target="_blank" rel="noopener">DAY-010.mp4</a><span>Тестти кантип табабыз?</span><span class="sz">14 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-011.mp4" target="_blank" rel="noopener">DAY-011.mp4</a><span>Тестти кантип баштайбыз?</span><span class="sz">12.3 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-012.mp4" target="_blank" rel="noopener">DAY-012.mp4</a><span>Суроолорго кантип жооп беребиз?</span><span class="sz">12.5 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-013.mp4" target="_blank" rel="noopener">DAY-013.mp4</a><span>Тестти кантип аяктайбыз?</span><span class="sz">13.7 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-014.mp4" target="_blank" rel="noopener">DAY-014.mp4</a><span>Жыйынтыкты кантип көрөбүз?</span><span class="sz">13.1 МБ</span></li>
+<li><a href="https://raw.githubusercontent.com/adiletgpt6-beep/dayardan/claude/dayardan-video-production-ns6ro9/output/DAY-015.mp4" target="_blank" rel="noopener">DAY-015.mp4</a><span>Dayardan сайтын толук колдонуу</span><span class="sz">14.3 МБ</span></li>
+  </ul>
+  <footer>Файлы хранятся в репозитории GitHub <a href="https://github.com/adiletgpt6-beep/dayardan/tree/claude/dayardan-video-production-ns6ro9/output" target="_blank" rel="noopener" style="color:var(--brand-dark)">adiletgpt6-beep/dayardan</a>, ветка claude/dayardan-video-production-ns6ro9. Проверка качества: output/VERIFICATION.md.</footer>
+</main>
